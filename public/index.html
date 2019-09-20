@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/cloud.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>10周年庆活动</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="text/javascript">
+    //移动端H5页面自适应代码
+      !function (n) {
+        var e = n.document, 
+          t = e.documentElement, 
+          i = 1809, 
+          d = i / 100, 
+          o = "orientationchange" in n ? "orientationchange" : "resize", 
+          a = function () { var n = t.clientHeight || 1809; n > 1809 && (n = 1809), t.style.fontSize = n / d + "px" 
+          console.log(1111111111, n, d, n / d,t.style.fontSize)
+        };
+        //在文档元素添加时间句柄，事件冒泡执行
+        e.addEventListener && (n.addEventListener(o, a, false), e.addEventListener("DOMContentLoaded", a, false)) 
+      }(window);
+    </script>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

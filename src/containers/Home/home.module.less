@@ -1,0 +1,674 @@
+.page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow-x: 1.26rem;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+}
+.page_bg {
+  width: 49.32rem;
+  height: 18.09rem;
+  background-image: url('./bg.png');
+  background-repeat: no-repeat;
+  background-size: 49.32rem 18.09rem;
+}
+.page_music {
+  width: 4.65rem;
+  height: 5.61rem;
+  position: absolute;
+  top: 3.75rem;
+  left: 14.34rem;
+  img {
+    width: 4.65rem;
+    height: 5.61rem;
+  }
+}
+.page_liwu {
+  width: 4.31rem;
+  height: 3.33rem;
+  position: absolute;
+  top: 10.47rem;
+  left: 37.83rem;
+  img {
+    width: 4.31rem;
+    height: 3.33rem;
+  }
+}
+.page_share {
+  width: 5.64rem;
+  height: 4.08rem;
+  position: absolute;
+  top: 1.27rem;
+  left: 31.77rem;
+  img {
+    width: 5.64rem;
+    height: 4.08rem;
+  }
+}
+.page_taxi {
+  width: 6.75rem;
+  height: 5.43rem;
+  position: absolute;
+  top: 6.06rem;
+  left: 42.45rem;
+  img {
+    width: 6.75rem;
+    height: 5.43rem;
+  }
+}
+.page_youxi {
+  width: 7.8rem;
+  height: 5.1rem;
+  position: absolute;
+  top: 12.84rem;
+  left:  30.27rem;
+  img {
+    width: 7.8rem;
+    height: 5.1rem;
+  }
+}
+.page_zhibo {
+  width: 5.79rem;
+  height: 5.71rem;
+  position: absolute;
+  top: 4.02rem;
+  left: 36.27rem;
+  img {
+    width: 5.79rem;
+    height: 5.71rem;
+  }
+}
+.page_zipai {
+  width: 4.68rem;
+  height: 6.9rem;
+  position: absolute;
+  top: 10.83rem;
+  left: 24.72rem;
+  img {
+    width: 4.68rem;
+    height: 6.9rem;
+  }
+}
+.hint{
+  width: 5.07rem;
+  height: 1.53rem;
+  position: absolute;
+  top: 16.26rem;
+  left: 0.75rem;
+  z-index: 999;
+  .hinttext {
+    width: 5.07rem;
+    height: 1.53rem;
+  }
+}
+.numberImg{
+  width: 0.72rem;
+  height: 0.87rem;
+  position: absolute;
+  top: 16.92rem;
+  left: 2.04rem;
+  z-index: 9999;
+  img{
+    width: 0.72rem;
+    height: 0.87rem;
+  }
+}
+.paly{
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 0.36rem;
+  left: 0.48rem;
+  z-index: 9999;
+  img{
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  animation: rotatemusic 3.5s linear 0s infinite normal;
+  -webkit-animation: rotatemusic 3.5s linear 0s infinite normal;
+  -moz-animation: rotatemusic 3.5s linear 0s infinite;
+  -ms-animation: rotatemusic 3.5s linear 0s infinite;
+  -o-animation: rotatemusic 3.5s linear 0s infinite;
+}
+/****************/
+.wrap{
+  width: 9.75rem;
+  height: 12.45rem;
+  background-Image: url('./tankuang.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 9.75rem 12.45rem;
+  position: relative;
+  margin:0 1.26rem;    
+}
+.tanbtn{
+  width: 4.5rem;
+  height: 1.7rem;
+  padding: 4px 4px;
+  cursor: pointer;
+  background: #1d9650;
+  color: #fff;    
+}
+.wrap_closebtn{
+  width: 1.35rem;
+  height: 1.35rem;
+  position: absolute;
+  top: -0.36rem;
+  left: 8.7rem;
+  img{
+    width: 1.35rem;
+    height: 1.35rem;     
+  }   
+}
+.wrap_headline{
+  width: 7.56rem;
+  height: 1.35rem;
+  position: absolute;
+  top: 0.9rem;
+  line-height:0.72rem;
+  left: 1.11rem;  
+  font-family: 'HYQiHei-GZS';
+  font-size: 0.57rem;
+  color: #DBDAFD;
+  text-align: center
+}
+.wrap_btn_blue1{
+  width: 6.6rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 3.33rem;
+  left: 1.59rem;
+  background-Image: url('./btn_blue.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 6.6rem 1.5rem;
+  img{
+    width: 6.6rem;
+    height: 1.5rem;
+  }
+}
+.optext{
+width: 6.6rem;
+height: 0.57rem;
+color: #FFFFFF;  
+position:absolute;
+top: 0.48rem;
+left: 0rem;
+text-align: center;
+font-family: 'HYQiHei-GZS';
+font-size: 0.57rem;
+}
+.wrap_btn_blue2{
+  width: 6.6rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 5.37rem;
+  left: 1.59rem;
+  background-Image: url('./btn_blue.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 6.6rem 1.5rem;
+  img{
+    width: 6.6rem;
+    height: 1.5rem;
+  }
+}
+.wrap_btn_blue3{
+  width: 6.6rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 7.41rem;
+  left: 1.59rem;
+  background-Image: url('./btn_blue.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 6.6rem 1.5rem;
+  img{
+    width: 6.6rem;
+    height: 1.5rem;
+  }
+}
+.wrap_btn_blue4{
+  width: 6.6rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 9.45rem;
+  left: 1.59rem;
+  background-Image: url('./btn_blue.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 6.6rem 1.5rem;
+  img{
+    width: 6.6rem;
+    height: 1.5rem;
+  }
+}
+.wrap_complestatus{
+  display: none;
+  width: 1.32rem;
+  height: 0.42rem;
+  position: absolute;  
+  top: 11.43rem;
+  left: 4.23rem;
+  p{
+    color: #fff;
+    font-size: 0.42rem;
+  }
+}
+/*计算人设*/
+.page_loadingFeatrue
+{
+    width: 49.32rem;
+    height: 18.09rem;
+    background-image: url('./bg_loading.png');
+    background-repeat: no-repeat;
+    background-size: 49.32rem 18.09rem;
+    position: relative;
+    display: none;
+}
+.page_che{
+  width: 5.1rem;
+  height: 1.41rem;
+  position: absolute;
+  top: 6.3rem;
+  left: 3.09rem;
+  img {
+    width: 5.1rem;
+    height: 1.41rem;
+  }
+}
+.page_text{
+  width: 5.1rem;
+  height: 1.26rem;
+  position: absolute;
+  top: 7.89rem;
+  left: 3.12rem;
+  line-height: 0.78rem;
+  font-family: 'HYQiHei-EZS';
+  font-size: 0.54rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+//指引动效图
+
+.home_word{
+  width: 9.84rem;
+  height: 3.6rem;
+  position: absolute;
+  top: 7.14rem;
+  left: 0.75rem;
+  .home_word_bg {
+    width: 9.84rem;
+    height: 3.6rem;
+  }
+}
+.home_word_dian {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  animation: bounceInDown 1s linear 0.5s forwards;
+  opacity: 0;
+  top: 1.2rem;
+  left: 0.95rem;
+}
+.home_word_ji {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  animation: bounceInDown 1s linear 0.5s forwards;
+  opacity: 0;
+  top: 1.2rem;
+  left: 2.85rem;
+}
+.home_word_dong {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  animation: bounceInDown 1s linear 0.5s forwards;
+  opacity: 0;
+  top: 1.2rem;
+  left: 4.75rem;
+}
+.home_word_xiao {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  animation: bounceInDown 1s linear 0.5s forwards;
+  opacity: 0;
+  top: 1.2rem;
+  left: 6.65rem;
+}
+.home_word_jiantou {
+  width: 1.44rem;
+  height: 1.2rem;
+  position: absolute;
+  animation: bounceInDown 1s linear 0.5s forwards;
+  opacity: 0;
+  top: 1.2rem;
+  left: 8.0rem;
+}
+.animation_jiantou {
+  animation: beatJiantou 1.2s linear infinite;
+}
+.animation_word {
+  animation: beatWord 2s linear infinite;
+}
+
+.pointIn {
+  animation: pointIn 0.6s linear 0s forwards;
+}
+.pointOut {
+  animation: pointOut 0.6s linear 0s forwards;
+}
+.home_handpoint_wrapper{
+  width: 6.66rem;
+  height: 6.66rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4.03rem;
+  left: 14.34rem;
+  opacity: 0;
+  transform: scale(0);
+  background-Image: url('./bg_showthis.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 6.66rem 6.66rem;
+  img{
+    width: 1.02rem;
+    height: 1.74rem;
+    animation: beatPoint 0.8s linear infinite;
+  } 
+}
+.home_handpoint_wrapper_music {
+  width: 6.66rem;
+  height: 6.66rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4.03rem;
+  left: 14.34rem;
+  opacity: 0;
+  transform: scale(0);
+  background-Image: url('./bg_showthis.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 6.66rem 6.66rem;
+  img{
+    width: 1.02rem;
+    height: 1.74rem;
+    animation: beatPoint 0.8s linear infinite;
+  } 
+}
+.home_handpoint_wrapper_zipai {
+  width: 6.66rem;
+  height: 6.66rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 11.05rem;
+  left: 24.72rem;
+  opacity: 0;
+  transform: scale(0);
+  background-Image: url('./bg_showthis.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 6.66rem 6.66rem;
+  img{
+    width: 1.02rem;
+    height: 1.74rem;
+    animation: beatPoint 0.8s linear infinite;
+  } 
+}
+.home_handpoint_wrapper_share {
+  width: 6.66rem;
+  height: 6.66rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1.59rem;
+  left: 31.77rem;
+  opacity: 0;
+  transform: scale(0);
+  background-Image: url('./bg_showthis.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 6.66rem 6.66rem;
+  img{
+    width: 1.02rem;
+    height: 1.74rem;
+    animation: beatPoint 0.8s linear infinite;
+  } 
+}
+.home_handpoint_wrapper_youxi {
+  width: 6.66rem;
+  height: 6.66rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 13.05rem;
+  left: 30.27rem;
+  opacity: 0;
+  transform: scale(0);
+  background-Image: url('./bg_showthis.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 6.66rem 6.66rem;
+  img{
+    width: 1.02rem;
+    height: 1.74rem;
+    animation: beatPoint 0.8s linear infinite;
+  } 
+}
+.home_handpoint_wrapper_zhibo {
+  width: 6.66rem;
+  height: 6.66rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4.92rem;
+  left: 36.27rem;
+  opacity: 0;
+  transform: scale(0);
+  background-Image: url('./bg_showthis.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 6.66rem 6.66rem;
+  img{
+    width: 1.02rem;
+    height: 1.74rem;
+    animation: beatPoint 0.8s linear infinite;
+  } 
+}
+.home_handpoint_wrapper_liwu {
+  width: 6.66rem;
+  height: 6.66rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 11.07rem;
+  left: 37.83rem;
+  opacity: 0;
+  transform: scale(0);
+  background-Image: url('./bg_showthis.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 6.66rem 6.66rem;
+  img{
+    width: 1.02rem;
+    height: 1.74rem;
+    animation: beatPoint 0.8s linear infinite;
+  } 
+}
+.home_handpoint_wrapper_taxi {
+  width: 6.66rem;
+  height: 6.66rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 6.96rem;
+  left: 42.45rem;
+  opacity: 0;
+  transform: scale(0);
+  background-Image: url('./bg_showthis.png');
+  background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+  background-size: 6.66rem 6.66rem;
+  img{
+    width: 1.02rem;
+    height: 1.74rem;
+    animation: beatPoint 0.8s linear infinite;
+  } 
+}
+
+
+@keyframes pointIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  1% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1
+  }
+}
+@keyframes pointOut {
+  1% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  99% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0
+  }
+}
+
+@keyframes beatWord {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1) translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  85% {
+    transform: scale(0.9) translate3d(0, 2px, 0);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(1) translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  95% {
+    transform: scale(0.9) translate3d(0, 2px, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes beatJiantou {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.1) translate3d(10px, 0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1) translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(0.9) translate3d(-10px, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -500px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    opacity: 1;
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    opacity: 1;
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+
+
+@keyframes rotatemusic {
+  from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(360deg);}
+}
+
+@-webkit-keyframes rotatemusic {
+  from {-webkit-transform: rotate(0deg);
+  }
+  to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotatemusic {
+  from {-moz-transform: rotate(0deg);}
+  to {-moz-transform: rotate(360deg);}
+}
+
+@-ms-keyframes rotatemusic {
+  from {-ms-transform: rotate(0deg);}
+  to {-ms-transform: rotate(360deg);}
+}
+
+@-o-keyframes rotatemusic {
+  from {-o-transform: rotate(0deg);}
+  to {-o-transform: rotate(360deg);}
+}
+
+@keyframes beatPoint{
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

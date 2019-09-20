@@ -1,0 +1,48 @@
+
+.audio_music{
+	width: 1.2rem;
+  	height: 1.2rem;
+  	position: absolute;
+  	top: 0.36rem;
+  	left: 0.48rem;
+  	z-index: 9999;
+}
+.auido-photos{
+	width: 1.2rem;
+  	height: 1.2rem;
+	display: block;
+	cursor: pointer
+}
+.auido-photos img{
+	width:100%;
+	animation: rotatemusic 3.5s linear 0s infinite normal;
+  	-webkit-animation: rotatemusic 3.5s linear 0s infinite normal;
+  	-moz-animation: rotatemusic 3.5s linear 0s infinite;
+  	-ms-animation: rotatemusic 3.5s linear 0s infinite;
+  	-o-animation: rotatemusic 3.5s linear 0s infinite;
+}
+@keyframes rotatemusic {
+	from {transform: rotateZ(0deg);}
+	to {transform: rotateZ(360deg);}
+  }
+  
+  @-webkit-keyframes rotatemusic {
+	from {-webkit-transform: rotate(0deg);
+	}
+	to {-webkit-transform: rotate(360deg);}
+  }
+  
+  @-moz-keyframes rotatemusic {
+	from {-moz-transform: rotate(0deg);}
+	to {-moz-transform: rotate(360deg);}
+  }
+  
+  @-ms-keyframes rotatemusic {
+	from {-ms-transform: rotate(0deg);}
+	to {-ms-transform: rotate(360deg);}
+  }
+  
+  @-o-keyframes rotatemusic {
+	from {-o-transform: rotate(0deg);}
+	to {-o-transform: rotate(360deg);}
+  }

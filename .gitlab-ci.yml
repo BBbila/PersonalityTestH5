@@ -1,0 +1,31 @@
+# 自动化部署上线配置文件
+# 1. cd到client目录
+# 2. 执行 npm install
+# 3. 执行 npm run build
+# 4.
+# 4.1 判断deploy目录下的nodecode目录下是否有static目录和index.html文件 有则删除
+#  4.2 cp client/build目录下的 static目录 和 index.html 到deploy/nodecode下
+# 5. cd到deploy/nodecode    
+# 6. 执行npm install 
+# 7. cp deploy/nodecode下的所有内容到测试或生产服务器  
+# 8. 在测试或生产服务器上运行pm2命令启动nodejs服务器
+stages:
+  - build
+
+
+job_build:
+  stage: build
+  only:
+    - webcloud_photo_dev
+  script:
+      - npm install
+      - npm run build
+      - cp -r build  deployment
+      - cd deployment
+      - npm install
+      - tar -zcf ../nodecode.tar.gz *
+      - ssh work@172.17.203.17 "/data/NODEJS_webcloud/stop.sh"
+      - ssh work@172.17.203.17  "rm -rf /data/NODEJS_webcloud/node-v8.11.1/nodecode/*"
+      - scp ../nodecode.tar.gz work@172.17.203.17:/data/NODEJS_webcloud/node-v8.11.1/nodecode/
+      - ssh work@172.17.203.17  "cd /data/NODEJS_webcloud/node-v8.11.1/nodecode/;tar -zxf nodecode.tar.gz;rm -rf nodecode.tar.gz"
+      - ssh work@172.17.203.17  "/data/NODEJS_webcloud/start.sh"

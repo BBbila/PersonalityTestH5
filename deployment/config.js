@@ -1,0 +1,6 @@
+module.exports.CONTEXT = '/activity'
+module.exports.host = '10.109.4.149'
+module.exports.port = '3001'
+module.exports.API_HOST = 'https://pimapi.lenovomm.com/'
+//module.exports.API_HOST_UPLOAD = 'http://39.108.126.181'
+module.exports.API_HOST_UPLOAD = 'http://39.108.43.166'

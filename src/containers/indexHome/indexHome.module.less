@@ -1,0 +1,147 @@
+.page {
+    width: 100%;
+    height: 100%;
+    position: fixed;//生成绝对定位的元素，相对于浏览器窗口进行定位
+    overflow-x: hidden;//内容的水平边缘自动生成
+    overflow-y: hidden;//内容的垂直边缘裁剪内容
+    //-webkit-overflow-scrolling: touch;//具有回弹效果的滚动
+    text-align: center;//文本居中
+  }
+  .page_bg {
+    width: 11.25rem;
+    height: 18.09rem;
+    background: red;
+    background-image: url('./indexbg.png');
+    background-repeat: no-repeat;//图片是否及如何显示，这里表示不重复，只显示一次
+    background-size: 11.25rem 18.09rem;
+  }
+  .page_btn {
+    width: 5.25rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 13.59rem;
+    left: 3rem;
+    img{
+      width: 5.25rem;
+      height: 1.5rem;
+    }
+  }
+  .page_music1 {
+    width: 1.11rem;
+    height: 0.96rem;
+    position: absolute;
+    top: 15.78rem;
+    left: 3.57rem;
+    img{
+      width: 1.11rem;
+      height: 0.96rem;
+    }
+  }
+  .page_music2 {
+    width: 0.9rem;
+    height: 0.81rem;
+    position: absolute;
+    top: 12.66rem;
+    left: 2.1rem;
+    img{
+      width: 0.9rem;
+      height: 0.81rem;
+    }
+  }
+  .page_music3 {
+    width: 1.56rem;
+    height: 1.41rem;
+    position: absolute;
+    top: 7.35rem;
+    left: 1.65rem;
+    img{
+      width: 1.56rem;
+      height: 1.41rem;
+    }
+  }
+  .page_music4 {
+    width: 1.56rem;
+    height: 1.41rem;
+    position: absolute;
+    top: 5.85rem;
+    left: 7.74rem;
+    img{
+      width: 1.56rem;
+      height: 1.41rem;
+    }
+  }
+  .page_music5 {
+    width: 0.51rem;
+    height: 0.9rem;
+    position: absolute;
+    top: 3.36rem;
+    left: 9.84rem;
+    img{
+      width: 0.51rem;
+      height: 0.9rem;
+    }
+  }
+  .page_music6 {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 0.36rem;
+    left: 0.48rem;
+    img{
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+    animation: rotatemusic 3.5s linear 0s infinite normal;
+    -webkit-animation: rotatemusic 3.5s linear 0s infinite normal;
+	  -moz-animation: rotatemusic 3.5s linear 0s infinite;
+	  -ms-animation: rotatemusic 3.5s linear 0s infinite;
+	  -o-animation: rotatemusic 3.5s linear 0s infinite;
+  }
+  .page_music7 {
+    width: 1.35rem;
+    height: 1.56rem;
+    position: absolute;
+    top: 0.39rem;
+    left: 9.66rem;
+    img{
+      width: 1.35rem;
+      height: 1.56rem;
+    }
+  }
+  .page_music8 {
+    width: 0.99rem;
+    height: 0.84rem;
+    position: absolute;
+    top: 3.48rem;
+    left: 2.01rem;
+    img{
+      width: 0.99rem;
+      height: 0.84rem;
+    }
+  }
+  @keyframes rotatemusic {
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+  }
+  
+  @-webkit-keyframes rotatemusic {
+    from {-webkit-transform: rotate(0deg);
+    }
+    to {-webkit-transform: rotate(360deg);}
+  }
+  
+  @-moz-keyframes rotatemusic {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+  }
+  
+  @-ms-keyframes rotatemusic {
+    from {-ms-transform: rotate(0deg);}
+    to {-ms-transform: rotate(360deg);}
+  }
+  
+  @-o-keyframes rotatemusic {
+    from {-o-transform: rotate(0deg);}
+    to {-o-transform: rotate(360deg);}
+  }
+  

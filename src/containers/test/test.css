@@ -1,0 +1,21 @@
+.vertical-center-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .vertical-center-modal .ant-modal {
+    top: 0;
+  }
+  .ant-modal-body {
+    padding: 0 !important;
+    font-size: 0 !important;
+    line-height: 1 !important;
+  }
+  .ant-modal-content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0) ;
+    border: 0;
+    background-clip: padding-box;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
